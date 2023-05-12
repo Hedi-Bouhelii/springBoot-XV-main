@@ -37,7 +37,7 @@ public class AdminController {
         return "POST:: admin controller";
     }
 
-    @PutMapping("/activate")
+    @PatchMapping("/activate")
     @PreAuthorize("hasAuthority('admin:update')")
     public String put(@RequestParam("id") Integer id) {
         service.activateAgence(id);

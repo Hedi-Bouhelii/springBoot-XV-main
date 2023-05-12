@@ -14,7 +14,6 @@ import pfe.role.Role;
 public class AuthenticationResponse {
   @JsonProperty("id")
 private Integer id;
-
   @JsonProperty("access_token")
   private String accessToken;
   @JsonProperty("Role")
